@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="javascript.js"></script>
+ 
+  
+
+  <link href="style.css" type="text/css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+<title> U - Your Taste, Our Coffee </title>
+ 
+</head>
+
+
+
+<body>
+
+
+<header>
+	
+</header>
+
+	<nav>
+			<ul>
+				<li class="leftborder"><a href="#discover">Discover</a></li>
+					<!-- Discover your taste, tests, background info -->
+				<li><a href="#products">Products</a></li>
+					<!-- Coffee, cups -->
+				<li><a href="#">Your Blend</a></li>
+					<!-- Mix your own coffee tool -->
+				<li><a href="#"> Log In </a></li>
+				<li><button class="nav">Shopping Cart <i class="fa fa-shopping-cart"></i></button> </li>
+          			<!-- Insert link href to chopping cart. show items quantity in cart, rechts uitlijnen-->
+
+			</ul>
+	</nav>
+
+
+<div class="cart"><button class="close"><i class="fa fa-close"></i></button>
+
+	<p id="empty"><br>
+	<img src= "images/logosmall.jpg" class="logo-cart"><br>
+	Your shopping cart is empty.</p>
+	<!--<p id="totalB" value=""></p>-->
+
+</div>	
+		
+<div class="intro"> 
+			
+	<img src= "images/logosmall.jpg" id="logo-small"> 
+				<hr> 
+	<img src= "images/logotext.jpg" id="logo-text">
+			
+</div>
+
+<div class="container">
+
+		<div class="row">
+ 
+			<div class="column">
+				<img src= "images/brazil.jpg" class="column-image">
+			</div>
+
+	<div class="column">
+		<p>DULSÃO DO BRASIL<br></p>
+			<p>Origin<br>The Arabica and Robusta chosen for this blend grow in southern India, in the shade of large trees that also provide shelter for pepper and spice growing. Grown on high altitude plantations, the Robusta we use is a very pure coffee, very intense and slightly bitter. Only absolutely perfect beans, which have passed a rigorous selection process, are used for Indriya from India.</p>
+			<p>Roasting<br>
+			The Arabica is lightly roasted, to preserve its subtle aromas. In contrast, the Robusta is well roasted to reveal its intensity and develop a full body. Very fine grinding supports the body and enhances the flavour. Perfect start of your day.</p>
+			
+    	<hr><h2><b>Aromatic Profile:</b><br><i>Cocoa and dry plant notes, as well as a spicy bouquet reminiscent of cloves, pepper and nutmeg</i> </h2>
+
+    </div>
+
+	<h3> Are we a match? Click <a href="#products" class="orderlink">here</a> to order.</h3>
+	
+	<hr>
+
+	<div class="row">
+ 
+	<div class="column">
+		<img src= "images/india.jpg" class="column-image">
+	</div>
+
+	<div class="column">
+		<p>INDRIYA FROM INDIA<br></p>
+			<p>Origin<br>The Arabica and Robusta chosen for this blend grow in southern India, in the shade of large trees that also provide shelter for pepper and spice growing. Grown on high altitude plantations, the Robusta we use is a very pure coffee, very intense and slightly bitter. Only absolutely perfect beans, which have passed a rigorous selection process, are used for Indriya from India.</p>
+			<p>Roasting<br>
+			The Arabica is lightly roasted, to preserve its subtle aromas. In contrast, the Robusta is well roasted to reveal its intensity and develop a full body. Very fine grinding supports the body and enhances the flavour.</p>
+			
+    	<hr><h2><b>Aromatic Profile:</b><br><i>Cocoa and dry plant notes, as well as a spicy bouquet reminiscent of cloves, pepper and nutmeg</i> </h2>
+
+    	
+	</div>
+
+	<h3> Are we a match? Click <a href="#products" class="orderlink">here</a> to order.</h3>
+	
+	<hr>
+
+	<div class="row">
+ 
+	<div class="column">
+		<img src= "images/ethiopia.jpg" class="column-image">
+	</div>
+
+	<div class="column">
+		<p>BUKEELA KA ETHIOPIA<br></p>
+			<p>Origin<br>The Arabica and Robusta chosen for this blend grow in southern India, in the shade of large trees that also provide shelter for pepper and spice growing. Grown on high altitude plantations, the Robusta we use is a very pure coffee, very intense and slightly bitter. Only absolutely perfect beans, which have passed a rigorous selection process, are used for Indriya from India.</p>
+			<p>Roasting<br>
+			The Arabica is lightly roasted, to preserve its subtle aromas. In contrast, the Robusta is well roasted to reveal its intensity and develop a full body. Very fine grinding supports the body and enhances the flavour.</p>
+			
+    	<hr><h2><b>Aromatic Profile:</b><br><i>Cocoa and dry plant notes, as well as a spicy bouquet reminiscent of cloves, pepper and nutmeg</i> </h2>
+
+    	
+	</div>
+
+	<h3> Are we a match? Click <a href="#products" class="orderlink">here</a> to order.</h3>
+	
+	<hr>
+
+
+
+	<div class="products"><img src="images/cups.jpg" id="products" style="width:100%;">
+ 		<div class="top-right"><h1>Choose Your Blend</h1></div>
+		
+
+
+	<div class="productcolumn"> 
+	<h2> DULSÃO DO BRASIL  </h2> 
+	<a target="_blank" href="images/indiacup.jpg" alt="India">
+	<img src="images/brazil-thumb.jpg" alt="Brazil" class="cup-small">
+	</a>
+
+			
+	<h2> Price (10 cups): <b>&euro;3,50</b></h2>
+	
+		<p><br>
+		INTENSITY * * <br><br><br>
+		How to enjoy best:<br><br>
+		<i>Espresso 40ml</i><br><br>
+		</p>
+
+		<button class="plusmin" onclick="PlusB()">+</button>
+		 <p id="amountB" value="0">0</p> 
+		<button class="plusmin" onclick="MinB()">-</button>
+		<p class="note"> 1 = 10 cups </p>
+		<button class="add"><h3>Add to Cart</h3></button>
+		<!-- onclick="AddB()"-->
+	</div>
+
+
+	<div class="productcolumn"> 
+	<h2> INDRIYA FROM INDIA </h2> 
+	<a target="_blank" href="images/indiacup.jpg" alt="India">
+	<img src="images/india-thumb.jpg" alt="India" class="cup-small">
+	</a>
+	
+	<h2> Price (10 cups): <b>&euro;3,80</b></h2>
+	
+		<p><br>
+		INTENSITY * * * * *<br><br><br>
+		How to enjoy best:<br><br>
+		<i>Ristretto 25ml<br>Espresso 40ml</i><br>
+		</p>
+		<!--eigen actie-->
+		<button class="plusmin" onclick="PlusI()">+</button>
+		 <p id="amountI" value="0">0</p> 
+		<button class="plusmin" onclick="MinI()">-</button>
+		<p class="note"> 1 = 10 cups </p>
+		<button class="nav"><h3>Add to Cart</h3></button>
+	</div>
+
+	<div class="productcolumn">
+	<h2> BUKEELA KA ETHIOPIA </h2> 
+	<a target="_blank" href="images/ethiopiacup.jpg" alt="Ethiopia">
+	<img src="images/ethiopia-thumb.jpg" alt="Ethiopia" class="cup-small">
+	</a>
+	<h2> Price (10 cups): <b>&euro;3,20</b></h2>
+	
+		<p><br>
+		INTENSITY * <br><br><br>
+		How to enjoy best:<br><br>
+		<i>Lungo 110ml</i><br><br>
+		</p>
+
+		<!--eigen actie-->
+		<button class="plusmin" onclick="PlusE()">+</button>
+		 <p id="amountE" value="0">0</p> 
+		<button class="plusmin" onclick="MinE()">-</button>
+		<p class="note"> 1 = 10 cups </p>
+		<button class="nav"><h3>Add to Cart</h3></button>
+	</div>
+
+
+
+	</div>
+	</div>
+
+ <table>
+ 	<tr>
+ 		<th>DULSÃO DO BRASIL</th>
+ 		<th>INDRIYA FROM INDIA</th>
+ 		<th>BUKEELA KA ETHIOPIA</th>
+ 	</tr>
+
+ 	<tr class="table-img">
+ 		<td><img src="images/brazil-thumb.jpg" alt="Brazil" class="cup-small"><br>
+ 		* *</td>
+ 		<td><img src="images/india-thumb.jpg" alt="India" class="cup-small"><br>
+ 		* * * * *</td>
+ 		<td><img src="images/ethiopia-thumb.jpg" alt="Ethiopia" class="cup-small"><br>
+ 		* </td>
+ 	</tr>
+
+ 
+ 	<tr>
+ 		<td>10 caps: &euro;3,50<br> 1 cap: &euro;0,35</td>
+ 		<td>10 caps: &euro;3,80<br> 1 cap: &euro;0,38</td>
+ 		<td>10 caps: &euro;3,20<br> 1 cap: &euro;0,32</td>
+ 	</tr>
+
+  	<tr>
+ 		<td>Espresso 40ml</td>
+ 		<td>Ristretto 25ml<br>Espresso 40ml</td>
+ 		<td>Lungo 110ml</td>
+ 	</tr>
+
+  	<tr>
+ 		<td><i>EAN: 7640148346542</i></td>
+ 		<td><i>EAN: 7640148344876</i></td>
+ 		<td><i>EAN: 7640148349858</i></td>
+ 	</tr>
+
+	<tr>
+		<td colspan="3"><i>
+		INGREDIENTS and ALLERGENS<br>
+		Roast and ground coffee
+		Packaged in a protective atmosphere.</i></td>
+	</tr>
+
+	</table>
+
+	</div>
+
+
+</div>
+
+
+</body>
+
+
+</html>
+	
